@@ -1,9 +1,9 @@
-<!DOCTYPE html><html><head><title>Async | React Google Maps | tomchentw</title><base href="../"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta charset="UTF-8"/><link rel="stylesheet" href="assets/client-async-64ca9e7a0abcc0396c92.css"/><script src="assets/prism-dba180af0f356030e667.js"></script></head><body><div id="react-container"><div id="react-root" data-reactid=".1avcdfq0bgg" data-react-checksum="-1727991285"><nav class="navbar navbar-default" role="navigation" data-reactid=".1avcdfq0bgg.0"><div class="container-fluid" data-reactid=".1avcdfq0bgg.0.0"><div class="navbar-header" data-reactid=".1avcdfq0bgg.0.0.0"><button type="button" class="navbar-toggle collapsed" data-reactid=".1avcdfq0bgg.0.0.0.0"><span class="sr-only" data-reactid=".1avcdfq0bgg.0.0.0.0.0">Toggle navigation</span><span class="icon-bar" data-reactid=".1avcdfq0bgg.0.0.0.0.1"></span><span class="icon-bar" data-reactid=".1avcdfq0bgg.0.0.0.0.2"></span><span class="icon-bar" data-reactid=".1avcdfq0bgg.0.0.0.0.3"></span></button><a class="navbar-brand" href="#" data-reactid=".1avcdfq0bgg.0.0.0.1">React Google Maps</a></div><div class="collapse navbar-collapse" data-reactid=".1avcdfq0bgg.0.0.1"><ul class="nav navbar-nav" data-reactid=".1avcdfq0bgg.0.0.1.0"><li data-reactid=".1avcdfq0bgg.0.0.1.0.0"><a href="https://github.com/tomchentw" target="_blank" data-reactid=".1avcdfq0bgg.0.0.1.0.0.0">by @tomchentw</a></li><li class="active" data-reactid=".1avcdfq0bgg.0.0.1.0.1:$async-loader-getting-started"><a href="#async-loader-gs" data-reactid=".1avcdfq0bgg.0.0.1.0.1:$async-loader-getting-started.0">Async Loader - Getting Started</a></li></ul><ul class="nav navbar-nav navbar-right" style="margin-right:100px;" data-reactid=".1avcdfq0bgg.0.0.1.1"><li data-reactid=".1avcdfq0bgg.0.0.1.1.0"><a href="async/" data-reactid=".1avcdfq0bgg.0.0.1.1.0.0">Async Example</a></li></ul></div></div></nav><div class="container-fluid container--full-height" data-reactid=".1avcdfq0bgg.1"><div class="github-fork-ribbon-wrapper right" style="width:150px;height:150px;position:absolute;overflow:hidden;top:0px;z-index:9999;pointer-events:none;right:0px;" data-reactid=".1avcdfq0bgg.1.0"><div class="github-fork-ribbon" style="position:absolute;padding:2px 0;background-color:#333;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));-webkit-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.5);-moz-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.5);box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.5);font:700 13px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;z-index:9999;pointer-events:auto;top:42px;right:-43px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);" data-reactid=".1avcdfq0bgg.1.0.0"><a href="https://github.com/tomchentw/react-google-maps" style="color:#fff;text-decoration:none;text-shadow:0 -1px rgba(0, 0, 0, 0.5);text-align:center;width:200px;line-height:20px;display:inline-block;padding:2px 0;border-width:1px 0;border-style:dotted;border-color:rgba(255, 255, 255, 0.7);" data-reactid=".1avcdfq0bgg.1.0.0.0">Fork me on GitHub</a></div></div><div id="toast-container" aria-live="polite" role="alert" data-reactid=".1avcdfq0bgg.1.1"></div><div class="row row--full-height" data-reactid=".1avcdfq0bgg.1.2"><div class="col-xs-6" style="height:100%;" data-reactid=".1avcdfq0bgg.1.2.0"><svg fill="#000" width="24" height="24" viewBox="0 0 40 40" style="vertical-align:middle;display:block;margin:150px auto;animation:fa-spin 2s infinite linear;" size="24" preserveAspectRatio="xMidYMid meet" data-reactid=".1avcdfq0bgg.1.2.0.0"><g data-reactid=".1avcdfq0bgg.1.2.0.0.0"><path d="m12.2 29.4q0 1.1-0.8 1.9t-1.9 0.8q-1.1 0-1.9-0.8t-0.8-1.9q0-1.1 0.8-1.9t1.9-0.8 1.9 0.8 0.8 1.9z m10.5 4.4q0 1.1-0.8 1.9t-1.9 0.8-1.9-0.8-0.8-1.9 0.8-2 1.9-0.7 1.9 0.7 0.8 2z m-14.9-14.9q0 1.1-0.7 1.9t-2 0.8-1.9-0.8-0.8-1.9 0.8-1.9 1.9-0.8 2 0.8 0.7 1.9z m25.4 10.5q0 1.1-0.8 1.9t-1.9 0.8q-1.1 0-1.9-0.8t-0.8-1.9 0.8-1.9 1.9-0.8 1.9 0.8 0.8 1.9z m-20.3-21q0 1.4-1 2.4t-2.4 1-2.4-1-1-2.4 1-2.4 2.4-1 2.4 1 1 2.4z m24.7 10.5q0 1.1-0.8 1.9t-1.9 0.8-2-0.8-0.7-1.9 0.7-1.9 2-0.8 1.9 0.8 0.8 1.9z m-13.5-14.8q0 1.6-1.2 2.8t-2.9 1.2-2.9-1.2-1.2-2.8 1.2-2.9 2.9-1.2 2.9 1.2 1.2 2.9z m11.1 4.3q0 2-1.4 3.3t-3.3 1.4q-2 0-3.3-1.4t-1.4-3.3q0-1.9 1.4-3.3t3.3-1.4q1.9 0 3.3 1.4t1.4 3.3z" data-reactid=".1avcdfq0bgg.1.2.0.0.0.0"></path></g></svg></div><div class="col-xs-6" data-reactid=".1avcdfq0bgg.1.2.1"><pre data-reactid=".1avcdfq0bgg.1.2.1.0"><code class="language-javascript" data-reactid=".1avcdfq0bgg.1.2.1.0.0">import {default as React, Component} from &quot;react&quot;;
+<!DOCTYPE html><html><head><title>Async | React Google Maps | tomchentw</title><base href="../"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta charset="UTF-8"/><link rel="stylesheet" href="assets/client-async-bd31ad971c8bc9a24570.css"/><script src="assets/prism-dba180af0f356030e667.js"></script></head><body><div id="react-container"><div id="react-root" data-reactid=".1g7uzf32juo" data-react-checksum="-432843614"><nav class="navbar navbar-default" role="navigation" data-reactid=".1g7uzf32juo.0"><div class="container-fluid" data-reactid=".1g7uzf32juo.0.0"><div class="navbar-header" data-reactid=".1g7uzf32juo.0.0.0"><button type="button" class="navbar-toggle collapsed" data-reactid=".1g7uzf32juo.0.0.0.0"><span class="sr-only" data-reactid=".1g7uzf32juo.0.0.0.0.0">Toggle navigation</span><span class="icon-bar" data-reactid=".1g7uzf32juo.0.0.0.0.1"></span><span class="icon-bar" data-reactid=".1g7uzf32juo.0.0.0.0.2"></span><span class="icon-bar" data-reactid=".1g7uzf32juo.0.0.0.0.3"></span></button><a class="navbar-brand" href="#" data-reactid=".1g7uzf32juo.0.0.0.1">React Google Maps</a></div><div class="collapse navbar-collapse" data-reactid=".1g7uzf32juo.0.0.1"><ul class="nav navbar-nav" data-reactid=".1g7uzf32juo.0.0.1.0"><li data-reactid=".1g7uzf32juo.0.0.1.0.0"><a href="https://github.com/tomchentw" target="_blank" data-reactid=".1g7uzf32juo.0.0.1.0.0.0">by @tomchentw</a></li><li class="active" data-reactid=".1g7uzf32juo.0.0.1.0.1:$async-loader-getting-started"><a href="#async-loader-gs" data-reactid=".1g7uzf32juo.0.0.1.0.1:$async-loader-getting-started.0">Async Loader - Getting Started</a></li></ul><ul class="nav navbar-nav navbar-right" style="margin-right:100px;" data-reactid=".1g7uzf32juo.0.0.1.1"><li data-reactid=".1g7uzf32juo.0.0.1.1.0"><a href="async/" data-reactid=".1g7uzf32juo.0.0.1.1.0.0">Async Example</a></li></ul></div></div></nav><div class="container-fluid container--full-height" data-reactid=".1g7uzf32juo.1"><div class="github-fork-ribbon-wrapper right" style="width:150px;height:150px;position:absolute;overflow:hidden;top:0px;z-index:9999;pointer-events:none;right:0px;" data-reactid=".1g7uzf32juo.1.0"><div class="github-fork-ribbon" style="position:absolute;padding:2px 0;background-color:#333;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));-webkit-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.5);-moz-box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.5);box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.5);font:700 13px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;z-index:9999;pointer-events:auto;top:42px;right:-43px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);" data-reactid=".1g7uzf32juo.1.0.0"><a href="https://github.com/tomchentw/react-google-maps" style="color:#fff;text-decoration:none;text-shadow:0 -1px rgba(0, 0, 0, 0.5);text-align:center;width:200px;line-height:20px;display:inline-block;padding:2px 0;border-width:1px 0;border-style:dotted;border-color:rgba(255, 255, 255, 0.7);" data-reactid=".1g7uzf32juo.1.0.0.0">Fork me on GitHub</a></div></div><div id="toast-container" aria-live="polite" role="alert" data-reactid=".1g7uzf32juo.1.1"></div><div class="row row--full-height" data-reactid=".1g7uzf32juo.1.2"><div class="col-xs-6" style="height:100%;" data-reactid=".1g7uzf32juo.1.2.0"><svg fill="#000" width="24" height="24" viewBox="0 0 40 40" style="vertical-align:middle;display:block;margin:150px auto;animation:fa-spin 2s infinite linear;" size="24" preserveAspectRatio="xMidYMid meet" data-reactid=".1g7uzf32juo.1.2.0.0"><g data-reactid=".1g7uzf32juo.1.2.0.0.0"><path d="m12.2 29.4q0 1.1-0.8 1.9t-1.9 0.8q-1.1 0-1.9-0.8t-0.8-1.9q0-1.1 0.8-1.9t1.9-0.8 1.9 0.8 0.8 1.9z m10.5 4.4q0 1.1-0.8 1.9t-1.9 0.8-1.9-0.8-0.8-1.9 0.8-2 1.9-0.7 1.9 0.7 0.8 2z m-14.9-14.9q0 1.1-0.7 1.9t-2 0.8-1.9-0.8-0.8-1.9 0.8-1.9 1.9-0.8 2 0.8 0.7 1.9z m25.4 10.5q0 1.1-0.8 1.9t-1.9 0.8q-1.1 0-1.9-0.8t-0.8-1.9 0.8-1.9 1.9-0.8 1.9 0.8 0.8 1.9z m-20.3-21q0 1.4-1 2.4t-2.4 1-2.4-1-1-2.4 1-2.4 2.4-1 2.4 1 1 2.4z m24.7 10.5q0 1.1-0.8 1.9t-1.9 0.8-2-0.8-0.7-1.9 0.7-1.9 2-0.8 1.9 0.8 0.8 1.9z m-13.5-14.8q0 1.6-1.2 2.8t-2.9 1.2-2.9-1.2-1.2-2.8 1.2-2.9 2.9-1.2 2.9 1.2 1.2 2.9z m11.1 4.3q0 2-1.4 3.3t-3.3 1.4q-2 0-3.3-1.4t-1.4-3.3q0-1.9 1.4-3.3t3.3-1.4q1.9 0 3.3 1.4t1.4 3.3z" data-reactid=".1g7uzf32juo.1.2.0.0.0.0"></path></g></svg></div><div class="col-xs-6" data-reactid=".1g7uzf32juo.1.2.1"><pre data-reactid=".1g7uzf32juo.1.2.1.0"><code class="language-javascript" data-reactid=".1g7uzf32juo.1.2.1.0.0">import {default as React, Component} from &quot;react&quot;;
 import {default as update} from &quot;react-addons-update&quot;;
 import {default as FaSpinner} from &quot;react-icons/lib/fa/spinner&quot;;
 
-import {default as ScriptjsGoogleMap} from &quot;react-google-maps/lib/async/ScriptjsGoogleMap&quot;;
-import {Marker} from &quot;react-google-maps&quot;;
+import {default as ScriptjsLoader} from &quot;react-google-maps/lib/async/ScriptjsLoader&quot;;
+import {GoogleMap, Marker} from &quot;react-google-maps&quot;;
 
 /*
  * This is the modify version of:
@@ -69,7 +69,7 @@ export default class AsyncGettingStarted extends Component {
   render () {
     // &lt;script type=&quot;text/javascript&quot; src=&quot;https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=geometry,drawing,places&quot; /&gt;
     return (
-      &lt;ScriptjsGoogleMap
+      &lt;ScriptjsLoader
         hostname={&quot;maps.googleapis.com&quot;}
         pathname={&quot;/maps/api/js&quot;}
         query={{v: `3.${ AsyncGettingStarted.version }`, libraries: &quot;geometry,drawing,places&quot;}}
@@ -89,26 +89,37 @@ export default class AsyncGettingStarted extends Component {
             /&gt;
           &lt;/div&gt;
         }
-        // &lt;GoogleMap&gt; props
-        containerProps={{
-          ...this.props,
-          style: {
-            height: &quot;100%&quot;,
-          },
-        }}
-        ref=&quot;map&quot;
-        defaultZoom={3}
-        defaultCenter={{lat: -25.363882, lng: 131.044922}}
-        onClick={::this.handleMapClick}&gt;
-        {this.state.markers.map((marker, index) =&gt; {
-          return (
-            &lt;Marker
-              {...marker}
-              onRightclick={this.handleMarkerRightclick.bind(this, index)} /&gt;
-          );
-        })}
-      &lt;/ScriptjsGoogleMap&gt;
+        googleMapElement={
+          &lt;GoogleMap
+            containerProps={{
+              ...this.props,
+              style: {
+                height: &quot;100%&quot;,
+              },
+            }}
+            ref={googleMap =&gt; {
+              // Wait until GoogleMap is fully loaded. Related to #133
+              setTimeout(() =&gt; {
+                console.log(googleMap)
+                console.log(&quot;Zoom: &quot; + googleMap.getZoom());
+                console.log(&quot;Center: &quot; + googleMap.getCenter());
+              }, 50);
+            }}
+            defaultZoom={3}
+            defaultCenter={{lat: -25.363882, lng: 131.044922}}
+            onClick={::this.handleMapClick}
+          &gt;
+            {this.state.markers.map((marker, index) =&gt; {
+              return (
+                &lt;Marker
+                  {...marker}
+                  onRightclick={this.handleMarkerRightclick.bind(this, index)} /&gt;
+              );
+            })}
+          &lt;/GoogleMap&gt;
+        }
+      /&gt;
     );
   }
 }
-</code></pre></div></div></div></div></div><script src="assets/client-async-64ca9e7a0abcc0396c92.js"></script></body></html>
+</code></pre></div></div></div></div></div><script src="assets/client-async-bd31ad971c8bc9a24570.js"></script></body></html>
