@@ -35,6 +35,7 @@ const controlledPropTypes = {
   position: PropTypes.any,
   visible: PropTypes.bool,
   zIndex: PropTypes.number,
+  onBoxClick: PropTypes.func,
 };
 
 const defaultUncontrolledPropTypes = addDefaultPrefixToPropTypes(controlledPropTypes);
@@ -143,12 +144,10 @@ export default _.flowRight(
   componentDidMount() {
     const infoBox = getInstanceFromComponent(this);
     /*eslint-disable*/
-    if (google && google.maps) {
-      google.maps.event.addDomListener(infoBox, 'click', function(marker) {
-        console.log(marker);
-      });
+    if (this.props.onBoxClick && google && google.maps) {
+      this.__click_lister = google.maps.event.addDomListener(infoBox.content_, 'click', this.props.onBoxClick);
     }
-    /*eslint-disable*/
+    /*eslint-enable*/
     controlledPropUpdaterMap.children(infoBox, this.props.children, this);
   },
 
@@ -164,6 +163,11 @@ export default _.flowRight(
     const infoBox = getInstanceFromComponent(this);
     if (infoBox) {
       infoBox.setMap(null);
+      /*eslint-disable*/
+      if (google && google.maps) {
+        google.maps.event.clearListeners(this.__click_lister);
+      }
+      /*eslint-enable*/
     }
   },
 
