@@ -142,6 +142,13 @@ export default _.flowRight(
 
   componentDidMount() {
     const infoBox = getInstanceFromComponent(this);
+    /*eslint-disable*/
+    if (google && google.maps) {
+      google.maps.event.addDomListener(infoBox, 'click', function(marker) {
+        console.log(marker);
+      });
+    }
+    /*eslint-disable*/
     controlledPropUpdaterMap.children(infoBox, this.props.children, this);
   },
 
