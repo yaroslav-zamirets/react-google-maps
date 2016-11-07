@@ -164,7 +164,7 @@ export default _.flowRight(
     if (infoBox) {
       infoBox.setMap(null);
       /*eslint-disable*/
-      if (google && google.maps) {
+      if (this.props.onBoxClick && google && google.maps) {
         google.maps.event.clearListeners(this.__click_lister);
       }
       /*eslint-enable*/
